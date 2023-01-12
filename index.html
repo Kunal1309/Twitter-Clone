@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Tweeter-Clone</title>
+</head>
+
+<body>
+    <div class="mainForm" id="log-in-form-MainDiv">
+        <img src="./images/tweetLogo.webp" class="logInLogo" alt="">
+        <div class="logInForm">
+            <form id="log-in-form">
+                <label for="username">User Name</label><br>
+                <input type="text" name="username" id="usernameLogIn"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="passwordLogIn"><br>
+                <input type="submit" value="Log In" class="submitFormBtn"><br>
+            </form>
+            <p id="signIn">Sign In ?</p>
+            <p id="guest">Log In As A Guest !</p>
+        </div>
+        <div class="designDiv"></div>
+    </div>
+
+    <div class="mainForm" id="sign-in-form-MainDiv">
+        <img src="./images/tweetLogo.webp" class="SignInLogo" alt="">
+        <div class="SignInForm">
+            <form id="sign-in-form">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="username">User Name</label><br>
+                <input type="text" name="username" id="SignInUsername"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="SignInPassword"><br>
+                <label for="confirm-password">Confirm Password</label><br>
+                <input type="password" name="confirm-password" id="SignInConfirmPassword"><br>
+                <label for="DOB">Date Of Birth</label><br>
+                <input type="text" name="DOB" id="dob"><br>
+                <input type="submit" value="Sign In" class="submitSignFormBtn"><br>
+            </form>
+            <p id="LogIn">Log In ?</p>
+            <p id="SignUpguest">Log In As A Guest !</p>
+        </div>
+    </div>
+
+
+    <div class="root" id="Main-Root">
+        <!-- ##################################### - LEFT SECTION - ##################################### -->
+        <section class="tweeterLeft">
+            <section>
+                <button class="tweeterLogo"><img src="./images/tweetLogo.webp" alt="" class="tweeterLogo"></i></button>
+                <ul class="tweeterNav">
+                    <li class="tweeterNavList">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName">Home</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-hashtag" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName">Explore</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName">Notifications</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName">Messages</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName" style="margin-left: 25%;">Bookmarks</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName">Lists</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName" style="margin-left: 25%;">Profile</p>
+                    </li>
+                    <li class="tweeterNavList">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <p class="tweeterNavIconName" style="margin-left: 25%;">More</p>
+                    </li>
+                </ul>
+                <button class="tweeterNavTweetBtn">Tweet</button>
+                <img class="tweeterNavTweetLeaf" src="./images/tweetLeaf.png" alt="">
+            </section>
+            <section class="tweetLeftUserDetails">
+                <figure id="guestImg"><img class="tweetMidUserImg" src="./images/myImg.jpeg" alt="" class="tweetLeftUserImg"></figure>
+                <section class="tweetLeftUserNameId">
+                    <p class="tweetLeftUserName" id="myName">Kunal Titare</p>
+                    <p class="tweetLeftUserId" id="myId">@kunaltitare1</p>
+                </section>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </section>
+        </section>
+
+        <!-- ##################################### - MID SECTION - ##################################### -->
+        <section class="tweeterMid">
+            <section class="tweetMidFixedTop">
+                <p class="tweetMidHome">Home</p>
+                <button class="tweetMidStarBtn"><img class="tweetMidStarBtnImg" src="./images/tweetStarLogo.png"
+                        alt=""></i></button>
+            </section>
+
+            <section class="tweetMidUserArea">
+                <section class="tweetMidUserAreaSection">
+                    <figure id="MidguestImg"><img class="tweetMidUserImg" src="./images/myImg.jpeg" alt=""></figure>
+
+                    <section class="tweetMidUserAreaSubSection">
+                        <button class="tweetMidAudienceChoose">Everyone <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></button>
+                        <input class="tweetMidUserAreaSubSectionInput" type="text" placeholder="What's Happening?">
+                        <button class="tweetMidAudienceReply"><i class="fa fa-globe" aria-hidden="true"></i> Everyone
+                            can reply!</button>
+                        <section class="tweetMidUserAreaBottomSection">
+                            <section class="tweetMidUserAreaFaIcons">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                <i class="fa fa-camera" aria-hidden="true"></i>
+                                <i class="fa fa-mars-stroke-h" aria-hidden="true"></i>
+                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </section>
+                            <button class="tweetMidTweetsBtn">Tweet</button>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="tweetMidLoadTweets">Show 130 Tweets</section>
+            </section>
+
+            <section class="tweetMidNewTweets" id="tweet-mid-new-tweets">
+                <section class="tweetMidTweetOwner">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <p class="tweetMidTweetOwnerPara"><span class="tweetMidTweetOwnerSpan">Entertainment. </span><a class="tweetMidTweetOwnerAnchor">See more</a></p>
+                    <button data-id=${tweet._id} class="tweet-edit"> Edit </button>
+                    <button data-id=${tweet._id} class="tweet-delete"> Delete </button>
+                </section>
+                <section class="tweetMidMainTweet">
+                    <figure><img class="tweetMidSomeoneImg" src="./images/NedaWafa.jpeg" alt=""></figure>
+                    <section class="tweetMidMainTweetSection">
+                        <p class="tweetMidMainTweetOwnName"><a href="#">Neda Wafa</a><span>@neda_wafa . jan 5</span></p>
+                        <p class="tweetMidMainTweetDetails">Latest song</p>
+                        <figure><video controls poster="./images/myImgVideo.jpeg" width="480vw" height="250vh">
+                                <source src="./images/nedaVideo.mp4">
+                            </video></figure>
+                        <section class="tweetMidReaction">
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1.3M</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1996</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-retweet" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1309</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">130996</p>
+                            </section>
+                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="tweetMidNewTweets">
+                <section class="tweetMidTweetOwner">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <p class="tweetMidTweetOwnerPara"><span class="tweetMidTweetOwnerSpan">Entertainment. </span><a class="tweetMidTweetOwnerAnchor">See more</a></p>
+                    <button data-id=${tweet._id} class="tweet-edit"> Edit </button>
+                    <button data-id=${tweet._id} class="tweet-delete"> Delete </button>
+                </section>
+                <section class="tweetMidMainTweet">
+                    <figure><img class="tweetMidSomeoneImg" src="./images/NedaWafa.jpeg" alt=""></figure>
+                    <section class="tweetMidMainTweetSection">
+                        <p class="tweetMidMainTweetOwnName"><a href="#">Neda Wafa</a><span>@neda_wafa . jan 5</span></p>
+                        <p class="tweetMidMainTweetDetails">New Pic</p>
+                        <figure><img class="tweetMidSomeoneImgOnTweet" src="./images/nedaWafaImg.jpeg" alt=""></figure>
+                        <section class="tweetMidReaction">
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1.3M</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1996</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-retweet" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">1309</p>
+                            </section>
+                            <section class="tweetMidReactionCount">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <p class="tweetMidReactionCountView">130996</p>
+                            </section>
+                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- ##################################### - RIGHT SECTION - ##################################### -->
+        <section class="tweeterRight">
+            <section class="tweeterRightSearchArea">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="tweeterRightInput" placeholder="Search Tweeter">
+            </section>
+
+            <section class="tweeterRightSectionOne">
+                <p class="tweeterRightSectionOneTitle">What's Happening</p>
+                <section class="tweeterRightSectionOneSubSection">
+                    <p class="tweeterRightSectionOneSubSectionPara">Trending in INDIA</p>
+                    <p class="tweeterRightSectionOneHighlight">"Dr. B R Ambedkar"</p>
+                    <p class="tweeterRightSectionOneSubSectionTweet">13M tweets</p>
+                </section>
+                <section class="tweeterRightSectionOneSubSection">
+                    <p class="tweeterRightSectionOneSubSectionPara">Trending in INDIA</p>
+                    <p class="tweeterRightSectionOneHighlight">#Shrilanka"</p>
+                    <p class="tweeterRightSectionOneSubSectionTweet">1.2M tweets</p>
+                </section>
+                <section class="tweeterRightSectionOneSubSection">
+                    <p class="tweeterRightSectionOneSubSectionPara">Trending in INDIA</p>
+                    <p class="tweeterRightSectionOneHighlight">Banglore</p>
+                    <p class="tweeterRightSectionOneSubSectionTweet">0.9M tweets</p>
+                </section>
+                <section class="tweeterRightSectionOneSubSection">
+                    <p class="tweeterRightSectionOneSubSectionPara">Trending in INDIA</p>
+                    <p class="tweeterRightSectionOneHighlight">#AirIndia</p>
+                    <p class="tweeterRightSectionOneSubSectionTweet">3.4M tweets</p>
+                </section>
+                <section class="tweeterRightSectionOneSubSection">
+                    <p class="tweeterRightSectionOneSubSectionPara">Trending in INDIA</p>
+                    <p class="tweeterRightSectionOneHighlight">#ColdWave</p>
+                    <p class="tweeterRightSectionOneSubSectionTweet">9M tweets</p>
+                </section>
+                <p class="tweeterRightSectionShowMore">Show more</p>
+            </section>
+
+            <section class="tweeterRightSectionTwoo">
+                <p class="tweeterRightSectionTwooTitle">You might like</p>
+                <section class="tweetFollowPerson">
+                    <figure><img class="followingImg" src="./images/anu.jpeg" alt=""></figure>
+                    <section class="SuggestedPersonDetails">
+                        <p class="SuggestedPersonName">Mis. Anushka Sen<i class="fa-solid fa-badge-check"></i></p>
+                        <p class="SuggestedPersonId">@anushka_sen</p>
+                    </section>
+                    <button class="tweetFollowBtn">Follow</button>
+                </section>
+                <section class="tweetFollowPerson">
+                    <figure><img class="followingImg" src="./images/presidentIndia.jpeg" alt=""></figure>
+                    <section class="SuggestedPersonDetails">
+                        <p class="SuggestedPersonName">President of INDIA<i class="fa-solid fa-badge-check"></i></p>
+                        <p class="SuggestedPersonId">@presidentofIndia</p>
+                    </section>
+                    <button class="tweetFollowBtn">Follow</button>
+                </section>
+                <section class="tweetFollowPerson">
+                    <figure><img class="followingImg" src="./images/apj.jpeg" alt=""></figure>
+                    <section class="SuggestedPersonDetails">
+                        <p class="SuggestedPersonName">APJ Abdul Kalam<i class="fa-solid fa-badge-check"></i></p>
+                        <p class="SuggestedPersonId">@apj_abdul_kalam</p>
+                    </section>
+                    <button class="tweetFollowBtn">Follow</button>
+                </section>
+                <p class="tweeterRightSectionShowMore">Show more</p>
+            </section>
+            <section class="tweeterDetails">
+                <a href="https://twitter.com/en/tos">Terms of service</a>
+                <a href="https://twitter.com/en/privacy">Privacy policy</a>
+                <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">cookies policy</a>
+                <a href="https://help.twitter.com/en/resources/accessibility">Accessibility</a>
+                <a
+                    href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">adds
+                    info</a>
+                <p>more...</p>
+                <p>© 2023 Twitter, Inc.</p>
+            </section>
+        </section>
+
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
